@@ -3,8 +3,13 @@ import Section from "../../../components/Section";
 import Badge from "../../../components/Badge";
 import Link from "next/link";
 
-export default function GoalDetailPage({ params }: { params: { slug: string } }) {
-    const goal = journeyGoals.find(g => g.slug === params.slug);
+type Props = {
+    params: Promise<{ slug: string }>;
+};
+
+export default async function GoalDetailPage({ params }: Props) {
+    const { slug } = await params;
+    const goal = journeyGoals.find(g => g.slug === slug);
 
     if (!goal) return (
         <Section>
