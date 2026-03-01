@@ -6,10 +6,12 @@ import { Menu, X } from "lucide-react";
 import Image from 'next/image';
 
 const links = [
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#skills", label: "Skills" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/journey", label: "Journey" },
+  { href: "/notes", label: "Notes" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Nav() {
@@ -22,7 +24,7 @@ export default function Nav() {
         <Image src="/favicon.svg" alt='' width={25} height={25} /> Shubraj
         </span> */}
           {/* <span className="text-brand">▮</span> Shubraj */}
-          Shubraj
+          SRS
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {links.map(l => (

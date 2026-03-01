@@ -1,9 +1,9 @@
 import Section from "../components/Section";
 import ProjectCard from "../components/ProjectCard";
 import Badge from "../components/Badge";
-import { projects } from "../data.projects";
-import { experience } from "../data.experience";
-import { skills } from "../data.skills";
+import { projects } from "../data/data.projects";
+import { experience } from "../data/data.experience";
+import { skills } from "../data/data.skills";
 import { SITE } from "../site.config";
 
 export default function Page() {

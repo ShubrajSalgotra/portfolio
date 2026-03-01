@@ -1,4 +1,4 @@
-import type { Project } from "./components/ProjectCard";
+import type { Project } from "../components/ProjectCard";
 
 export const projects: Project[] = [
   {
@@ -20,12 +20,12 @@ export const projects: Project[] = [
     href: "#"
   },
   {
-   title: "VidFlow – AI Video Generator",
-   description: "Generates custom videos from text prompts. Features include prompt-based video creation and customizable styles.",
-   tags: ["Python", "TensorFlow/PyTorch", "Diffusion Models", "LLMs"],
-   href: "#"
- },
- {
+    title: "VidFlow – AI Video Generator",
+    description: "Generates custom videos from text prompts. Features include prompt-based video creation and customizable styles.",
+    tags: ["Python", "TensorFlow/PyTorch", "Diffusion Models", "LLMs"],
+    href: "#"
+  },
+  {
     title: "PlantPal – AI Plant Care Assistant",
     description: "A mobile app that uses AI to diagnose plant diseases from photos and provide personalized care plans.",
     tags: ["React Native", "TensorFlow.js", "LLMs", "Firebase"],
