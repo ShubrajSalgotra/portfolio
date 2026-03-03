@@ -1,0 +1,38 @@
+---
+title: Understanding Decorators
+description: Learn how to wrap your functions with extra functionality using decorators.
+order: 3
+---
+
+# Understanding Decorators
+
+A *decorator* is a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure. 
+
+Decorators are usually called before the definition of a function you want to decorate.
+
+## Basic Example
+
+Here is how you define a simple decorator:
+
+```python
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+@my_decorator
+def say_whee():
+    print("Whee!")
+
+say_whee()
+```
+
+### Explanation
+
+1. The `@my_decorator` syntax is just syntactic sugar.
+2. It passes the `say_whee` function to `my_decorator`.
+3. It replaces `say_whee` with the returned `wrapper` function.
+
+You will see decorators everywhere in frameworks like Flask or FastAPI!

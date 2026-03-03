@@ -9,15 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/react-dom": "^19.2.3",
     "clsx": "^2.1.1",
+    "gray-matter": "^4.0.3",
+    "highlight.js": "^11.11.1",
     "lucide-react": "^0.452.0",
     "next": "latest",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "next-mdx-remote": "^6.0.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "rehype-highlight": "^7.0.2"
   },
   "devDependencies": {
     "@types/node": "24.3.0",
-    "@types/react": "19.1.10",
+    "@types/react": "^19.2.14",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.10",

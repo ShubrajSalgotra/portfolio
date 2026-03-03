@@ -1,0 +1,102 @@
+---
+title: Object Oriented Programming
+description: Learn about Object Oriented Programming (OOP) in Python.
+order: 2
+---
+
+
+## 1. Why OOP Exists
+
+Before syntax, understand the **problem**.
+
+Imagine you’re building:
+
+* A Game Platform
+* An AI Tutor System
+
+If you write everything in plain functions + variables, your code becomes:
+
+* Hard to manage
+* Hard to scale
+* Hard to reuse
+* Hard to reason about
+
+OOP solves this.
+
+## 2. What is a Class?
+
+### 👉 Real World Analogy
+
+Think about a **Car**.
+
+A car has:
+
+* **Properties (data)**
+    * color
+    * speed
+    * brand
+* **Behaviors (actions)**
+    * accelerate()
+    * brake()
+    * honk()
+
+In programming:
+
+* **Properties** → Variables
+* **Behaviors** → Functions
+* **Together** → Class
+
+---
+
+### Definition
+
+> A class is a blueprint for creating objects.
+
+---
+
+### Basic Python Example
+
+```python
+class Car:
+    def __init__(self, brand, color):
+        self.brand = brand
+        self.color = color
+
+    def honk(self):
+        print("Beep Beep!")
+
+```
+
+**Breakdown:**
+
+1️. `class Car:`
+
+You are creating a blueprint.
+
+---
+
+2️. `__init__`
+
+This is a constructor.
+
+It runs automatically when object is created.
+
+---
+
+3️. `self`
+
+This is **VERY IMPORTANT**.
+
+`self` means:
+
+👉 "This particular object"
+
+Every object has its own data.
+
+---
+
+### Creating an Object
+
+```python
+my_car = Car("Tesla", "Red")
+```

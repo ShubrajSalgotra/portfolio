@@ -30,7 +30,7 @@ export default function Nav() {
           {links.map(l => (
             <a key={l.href} href={l.href} className="text-white/80 hover:text-white transition">{l.label}</a>
           ))}
-          <a href="#contact" className="btn btn-primary">Hire me</a>
+          <a href="/#contact" className="btn btn-primary">Hire me</a>
         </nav>
         <button onClick={() => setOpen(v => !v)} className="md:hidden p-2 bg-white/10 rounded-xl">
           {open ? <X /> : <Menu />}
@@ -42,7 +42,7 @@ export default function Nav() {
             {links.map(l => (
               <a key={l.href} href={l.href} className="text-white/90 bg-white/10 rounded-xl px-4 py-3" onClick={() => setOpen(false)}>{l.label}</a>
             ))}
-            <a href="#contact" className="btn btn-primary w-full text-center" onClick={() => setOpen(false)}>Hire me</a>
+            <a href="/#contact" className="btn btn-primary w-full text-center" onClick={() => setOpen(false)}>Hire me</a>
           </div>
         </div>
       )}
